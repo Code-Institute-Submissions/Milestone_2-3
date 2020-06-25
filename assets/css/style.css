@@ -1,0 +1,110 @@
+
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+/**Text Format**/
+.txt_center {
+    text-align: center;
+}
+
+/**Logo on left div in index page**/
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+/** "Portfolio, Blog" links on Index Page**/
+#pge_link_container ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#pge_link_container ul li { 
+    display: inline-block; 
+    border: 2px solid white;
+    padding: 15px 19.5px 15px 21.6px;
+    margin-top: 40px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    letter-spacing: .11em;
+    font-weight: 700;
+    
+}
+
+
+/**Index Page social Icons**/
+#soccontainer {
+    display: block;
+    margin-top: 150px;
+}
+#soccontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#soccontainer ul li { 
+    display: inline; 
+    padding: 5px;
+}
+
+#soccontainer ul li a
+{
+text-decoration: none;
+padding-bottom: 4px;
+color: #fff;
+
+}
+
+#soccontainer ul li a:hover
+{
+color: #fff;
+background-color:grey;
+}
+
+/**Index Header**/
+#index_header {
+    font-size: 55px;
+    font-family: Helvetica;
+    margin-top: 40px;
+    display: block;
+}
+
+/**Info Text**/
+#info_txt {
+    margin-top: 40px;
+    font-size: 21px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+
+}
+
+
+.lt_col {
+    background-image: url('/assets/images/mountain.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
