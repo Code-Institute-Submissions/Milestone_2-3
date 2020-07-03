@@ -125,6 +125,13 @@ body {
 }
 
 
+#gallery_2 {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+    background-color: white;
+    
+}
 #gallery {
 	max-width: 100rem;
 	margin: 0 auto;
@@ -173,16 +180,20 @@ body {
 	transform: scale(1.15);
 }
 
+/** Parallax **/
+.parallax {
+    margin-top: 55px;
+}
+
 /**Opaque Overlay for quote div**/
 .overlay {
     
      top: 0;
      left: 0;
-     height: 100vh;
+     height: 100%;
      width: 100%;
      background-color: rgba(0, 0, 0, 0.5);
 }
-
 
 /**Navbar**/
 
@@ -195,15 +206,9 @@ body {
   
 }
 
-
 *{
     box-sizing: border-box;
     transition: all 0.4s;
-}
-
-.container{
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 /* Navbar section */
@@ -339,12 +344,6 @@ body {
 .nav div.media_button button.active:hover span:nth-of-type(3) {
     transform: rotate3d(0, 0, 1, -20deg);
 }
-
-
-
-
-/**Gallery Navbar social Icons**/
-
  
      
 
@@ -389,11 +388,22 @@ body {
 }
 /* Callout Button */
  .btn {
-     background-color: #d78258;
+     height: 45px; 
+     width: 250px;
      margin-top: 20px;
+     border: 2px solid white;
+     
 }
+
+.btn_txt{
+    font-size: 20px;
+    color: white !important;
+}
+
+
  .button_anchor {
-     color: black !important;
+     color: white !important;
+     
 }
  
 
@@ -536,3 +546,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     background-attachment: scroll;
   }
 }
+
+
+
+
