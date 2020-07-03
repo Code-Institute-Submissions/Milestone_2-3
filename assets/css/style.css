@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  transition: all 0.4s;
 }
 
 /**Text Format**/
@@ -24,6 +26,8 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-top: 40px;
+  height: 110px;
+  width: 93px;
 }
 
 /** "Portfolio, Blog" links on Index Page**/
@@ -206,10 +210,7 @@ body {
   
 }
 
-*{
-    box-sizing: border-box;
-    transition: all 0.4s;
-}
+
 
 /* Navbar section */
 
@@ -546,7 +547,5 @@ Remove or comment-out the code block below to see how the browser will fall-back
     background-attachment: scroll;
   }
 }
-
-
 
 
