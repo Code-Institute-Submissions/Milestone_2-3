@@ -14,44 +14,58 @@
 
    <body>
    <!----Navbar from Bootstrap---->
-   <div class="container">
-   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <h1>K&P Photography</h1>
-         <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto nav_txt">
-               <li class="nav-item active">
-                  <a class="nav-link" href="index.html"
-                     >Home<span class="sr-only">(current)</span>
-                  </a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="menu.html">Menu</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="events.html">Events</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="catering.html">Catering</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" style="margin-right: 60px;" href="contact.html">Contact Us</a>
-               </li>
+    <nav class="nav">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="#"><img src="assets/images/logo_white_final.jpg" alt=""></a>
+        </div>
+        <div class="main_list" id="mainListDiv">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery,html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-         </div>
-      </nav>
-   </div>
+            
+        </div>
+        </div>
+        <div class="media_button">
+            <button class="main_media_button" id="mediaButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
 
+
+    
+ <!--Header technique from Code Institute Whiskey Mini Project-->
+      <div class="container-fluid callout-container">
+         <div class="opaque-overlay">&nbsp;</div>
+         <div class="row">
+            <div class="col-12">
+               <section
+                  class="callout jumbotron text-center w3-container w3-center w3-animate-zoom"
+                  >
+                  <h1
+                     class="jumbotron-header"
+                     >
+                     Collect Moments Not Things.
+                  </h1>
+                  <p>
+                     <a
+                        class="button_anchor btn btn-lg"
+                        href="contact.html"
+                        >Book Now!</a
+                        >
+                  </p>
+               </section>
+            </div>
+         </div>
+      </div>
+      <!--Header technique from Code Institute Whiskey Mini Project-->
 
 <!--- Photo Gallery----->
 <div id="gallery" class="container-fluid">
@@ -87,36 +101,22 @@
 	</div>
 </div>
 
-<div class="parallax">
-    <div class="jumbotron jumbotron-fluid bg-transparent" >
-        <div class="container opaque-overlay" >
-            <h1 class="display-4" style="color: white;">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-         </div>
+<div class="parallax" style="height: 50vh;"> 
+    <div class="container-fluid overlay" style="display: block;" >
+        <div class="test_1" style="color: white !important; text-align: right; margin-top: 150px; margin-right: 300px; display: block;">
+            <h1 class="test_1" style= "font-size: 50px;">Reveal your inner self.<br> Show  the difference.</h1>
+            <h4 class="test_2" style="margin-top:20px;">We are all unique. Reveal your creativity by means of photography.</h4>
+            <button style="margin-top: 20px;" type="button" class="btn btn-primary btn-lg">Large button</button>
+        </div>
     </div>
 </div>
+
 
 <div style="height:1000px;background-color:red;font-size:36px">
 This div is just here to enable scrolling.
 Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
 
-<div class="parallax"></div>
-
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-
 
 
 
@@ -124,6 +124,22 @@ Tip: Try to remove the background-attachment property to remove the scrolling ef
 
     
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <script src="assets/javascript/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <script
          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
