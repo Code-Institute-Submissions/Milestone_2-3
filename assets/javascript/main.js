@@ -1,3 +1,16 @@
+$(".outline_ind").mouseenter(function(){
+        $(this).css('background-color', 'white');
+        $(this).css('color', 'black');
+        $(this).css('font-weight', 'bold');
+        
+    });
+
+$(".outline_ind").mouseleave(function(){
+       $(this).css('background-color', 'black');
+       $(this).css('color', 'white');
+    });
+
+
 var mainListDiv = document.getElementById("mainListDiv"),
     mediaButton = document.getElementById("mediaButton");
 
