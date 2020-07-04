@@ -12,7 +12,7 @@
 }
 
 .index_nav_txt {
-  color: white !important;
+  color: white;
 }
 
 body {
@@ -30,6 +30,14 @@ body {
   width: 93px;
 }
 
+.div_ind_1 {
+    height: 100vh;
+}
+
+.div_ind_2 {
+    background-color: black;
+}
+
 /** "Portfolio, Blog" links on Index Page**/
 #pge_link_container ul {
   margin: 0;
@@ -38,7 +46,7 @@ body {
   text-align: center;
 }
 
-#pge_link_container ul li {
+.border {
   display: inline-block;
   border: 2px solid white;
   padding: 15px 19.5px 15px 21.6px;
@@ -46,8 +54,10 @@ body {
   margin-right: 10px;
   text-transform: uppercase;
   letter-spacing: 0.11em;
-  font-weight: 700;
+  font-weight: 400;
+  
 }
+
 
 
 /**Index Page social Icons**/
@@ -133,13 +143,12 @@ body {
 	max-width: 100rem;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
-    background-color: white;
-    
 }
 #gallery {
 	max-width: 100rem;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
+    
 }
 
 .heading {
@@ -161,6 +170,7 @@ body {
 	flex-wrap: wrap;
 	/* Compensate for excess margin on outer gallery flex items */
 	margin: -1rem -1rem;
+
 }
 
 .gallery-item {
@@ -205,8 +215,10 @@ body {
 .nav li a {
   font-size: 17px;
   font-weight: 200px;
-  color: black !important;
+  color: white !important;
   text-align: center !important;
+  
+  
   
 }
 
@@ -220,7 +232,7 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
-    background-color: #fff;
+    background-color:black;
     z-index: 99999;
     
 }
@@ -247,7 +259,7 @@ body {
     width: 600px;
     height: 65px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto ;
     display: block;
 }
 
@@ -267,7 +279,7 @@ body {
 
 .nav div.main_list ul li a{
     text-decoration: none;
-    color:#fff;
+    color:white;
     line-height: 65px;
     text-transform: uppercase;
 }
@@ -299,7 +311,7 @@ body {
     width: 98%;
     height: 1px;
     display: block;
-    background-color:black;
+    background-color: white;
     margin-top: 9px;
     margin-bottom: 10px;
 }
