@@ -272,7 +272,7 @@ body {
 /*********Header****************/
  .callout-container {
      height: 750px;
-     background: url("/assets/images/header_blue.jpg") no-repeat center center fixed;
+     background: url("../images/header_blue.jpg") no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -364,7 +364,7 @@ body {
 .parallax {
     margin-top: 55px;
     height: 70vh;
-    background-image: url("/assets/images/water_drops.jpg");
+    background-image: url("../images/water_drops.jpg");
     min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
