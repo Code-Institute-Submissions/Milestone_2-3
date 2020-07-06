@@ -1,3 +1,18 @@
+$("#head_btn").mouseenter(function(){
+        $(this).css('background-color', 'white');
+        $(this).css('color', 'black');
+        $(this).css('font-weight', 'bold');
+        
+    });
+
+$("#head_btn").mouseleave(function(){
+       $(this).css('background-color', 'transparent');
+       $(this).css('color', 'white');
+    });
+
+
+
+
 $(".outline_ind").mouseenter(function(){
         $(this).css('background-color', 'white');
         $(this).css('color', 'black');

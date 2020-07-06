@@ -6,7 +6,7 @@
   transition: all 0.4s;
 }
 
-/**Text Format**/
+/*****************Text Format*****************/
 .txt_center {
   text-align: center;
 }
@@ -16,11 +16,16 @@
 }
 
 body {
-  color: black;
   font-size: 12px;
 }
 
-/**Logo on left div in index page**/
+.centered {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/*****************Logo on left div in index page*****************/
 .logo_index {
   display: block;
   margin-right: auto;
@@ -38,7 +43,7 @@ body {
     background-color: black;
 }
 
-/** "Portfolio, Blog" links on Index Page**/
+/** ***************"Portfolio, Blog" links on Index Page*****************/
 #pge_link_container ul {
   margin: 0;
   padding: 0;
@@ -60,7 +65,7 @@ body {
 
 
 
-/**Index Page social Icons**/
+/*****************Index Page social Icons*****************/
 #soccontainer {
   display: block;
   margin-top: 150px;
@@ -85,10 +90,10 @@ body {
 
 #soccontainer ul li a:hover {
   color: #fff;
-  background-color: grey;
+  background-color:  #ffffff00
 }
 
-/**Index Header**/
+/*****************Index Header*****************/
 #index_header {
   font-size: 55px;
   font-family: Helvetica;
@@ -96,7 +101,7 @@ body {
   display: block;
 }
 
-/**Info Text**/
+/***************Info Text*************/
 #info_txt {
   margin-top: 40px;
   font-size: 21px;
@@ -121,110 +126,16 @@ body {
   justify-content: center;
 }
 
-/**Gallery Page**/
+/*****************Gallery Page*****************/
 
+/**********  Gallery Navbar section ***********/
 
-
-/**Photo Gallery**/
- 
-:root {
-	/* Base font size */
-	font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-
-#gallery_2 {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
-}
-#gallery {
-	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
-    
-}
-
-.heading {
-	line-height: 1.5;
-	text-align: left;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 35px;
-}
-
-.heading span {
-	display: block;
-}
-
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
-
-}
-
-.gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
-}
-
-.gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
-}
-
-.gallery-image:hover {
-	transform: scale(1.15);
-}
-
-/** Parallax **/
-.parallax {
-    margin-top: 55px;
-}
-
-/**Opaque Overlay for quote div**/
-.overlay {
-    
-     top: 0;
-     left: 0;
-     height: 100%;
-     width: 100%;
-     background-color: rgba(0, 0, 0, 0.5);
-}
-
-/**Navbar**/
-
-/**Gallery navbar txt size**/
 .nav li a {
   font-size: 17px;
   font-weight: 200px;
-  color: white !important;
+  color: white ;
   text-align: center !important;
-  
-  
-  
 }
-
-
-
-/* Navbar section */
 
 .nav{
     width: 100%;
@@ -357,14 +268,11 @@ body {
 .nav div.media_button button.active:hover span:nth-of-type(3) {
     transform: rotate3d(0, 0, 1, -20deg);
 }
- 
-     
 
-
-/*header */
+/*********Header****************/
  .callout-container {
      height: 750px;
-     background: url("/assets/images/header.jpg") no-repeat center center fixed;
+     background: url("/assets/images/header_blue.jpg") no-repeat center center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -399,7 +307,7 @@ body {
      margin: 25px 0;
      font-size: 20px;
 }
-/* Callout Button */
+/* ***************Callout Button ****************/
  .btn {
      height: 45px; 
      width: 250px;
@@ -410,26 +318,191 @@ body {
 
 .btn_txt{
     font-size: 20px;
-    color: white !important;
+    color: white;
 }
 
 
  .button_anchor {
-     color: white !important;
+     color: white;
      
 }
  
+     
 
-/* Medai qurey section */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    
-    .container{
-        margin: 0;
-    }
+/*****************Gallery Buttons*****************/
+#gal_btn_container {
+    height:auto; 
     
 }
 
+.gal_buttons {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white !important;
+    font-size: 20px;
+    text-align:center;
+   
+    
+}
+
+
+#gallery_body {
+    background-color: black !important;
+}
+
+#btn_div {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+#creative_btn {
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+/***************** Parallax *****************/
+.parallax {
+    margin-top: 55px;
+    height: 70vh;
+    background-image: url("/assets/images/water_drops.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax .container {
+    display: block;
+}
+
+.test_1 {
+    color: white !important; 
+    text-align: right !important; 
+    margin-top: 150px; 
+    margin-right: 300px; 
+    display: block;
+    font-size: 50px;
+}
+.test_2 {
+    margin-top:20px;
+}
+
+/*****************Opaque Overlay for Parallax div*****************/
+.overlay {
+    
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/*****************Photo Gallery*****************/
+ 
+:root {
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+#gallery_2 {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+#gallery {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+    
+}
+
+.heading {
+	line-height: 1.5;
+	text-align: left;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -1rem;
+
+}
+
+.gallery-item {
+	flex: 1 0 24rem;
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+.gal_border {
+    border: 2px solid white; 
+    padding: 6px;
+}
+
+
+
+
+
+
+
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+
+
+/**Media Queries**/
+@media screen and (max-width: 320px) {
+  .overlay {
+    height: 100vh !important;
+    
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .test_1 {
+    margin-right: 0 !important;
+    margin-top: 75px !important;
+  }
+}
 
 @media screen and (max-width:768px) {
     
@@ -478,21 +551,36 @@ body {
     .nav div.media_button{
         display: block;
     }
+
+    .nav li a {
+  
+  color: black !important;
+  
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container{
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+  .lt_col {
+    height: 50vh;
+  }
 }
 
 
-
-
-
-
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 
 @supports (display: grid) {
 	.gallery {
@@ -507,57 +595,5 @@ Remove or comment-out the code block below to see how the browser will fall-back
 	}
 }
 
-
-/**Media Queries**/
-
-@media screen and (min-width: 768px) {
-  
-  } 
-
-
-@media screen and (max-width: 924px) {
-  
-}
-
-@media screen and (max-width: 992px) {
-  .lt_col {
-    height: 50vh;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .test_1 {
-    margin-right: 0 !important;
-    margin-top: 75px !important;
-  }
-}
-@media screen and (max-width: 320px) {
-  .overlay {
-    height: 100vh !important;
-    
-  }
-}
-
-
-.parallax {
-  /* The image used */
-  background-image: url("/assets/images/gallery_background_2.jpg");
-
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
 
 

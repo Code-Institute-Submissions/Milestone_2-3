@@ -12,22 +12,7 @@
       <script src="https://kit.fontawesome.com/51ad751006.js" crossorigin="anonymous"></script>
    </head>
 
-   <body>
-        <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Milestone_2</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-      <link rel="stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
-      <script src="https://kit.fontawesome.com/51ad751006.js" crossorigin="anonymous"></script>
-   </head>
-
-   <body>
+   <body id="gallery_body">
    <!----Navbar from Bootstrap---->
     <nav class="nav">
     <div class="container-fluid">
@@ -36,8 +21,8 @@
         </div>
         <div class="main_list" id="mainListDiv">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery,html">Gallery</a></li>
+                <li ><a href="index.html">Home</a></li>
+                <li><u><a href="gallery,html">Gallery</a></u></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -70,7 +55,7 @@
                   </h1>
                   <p>
                      <a
-                        class="button_anchor btn btn-lg btn_txt"
+                        id="head_btn" class="button_anchor btn btn-lg btn_txt"
                         href="contact.html"
                         >Book Now</a
                         >
@@ -81,103 +66,72 @@
       </div>
       <!--Header technique from Code Institute Whiskey Mini Project-->
 
-<!--- Photo Gallery----->
-<div id="gallery" class="container-fluid">
-    
-
-	<h1 class="heading">Our Gallery</h1>
-
-	<div class="gallery">
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="assets/images/g1_image_1.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="assets/images/g1_image_2.jpg" alt="sunset behind San Francisco city skyline">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="assets/images/g1_image_3.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="assets/images/g1_image_4.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="assets/images/g1_image_5.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
-		</div>
-
-		<div class="gallery-item">
-			<img class="gallery-image" src="assets/images/g1_image_6.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-		</div>
-	</div>
-</div>
-<!--- Photo Gallery----->
-
-<!--- Parallax----->
-<div class="parallax" style="height: 50vh;"> 
-    <div class="container-fluid overlay" style="display: block;" >
-        <div class="test_1" style="color: white !important; text-align: right; margin-top: 150px; margin-right: 300px; display: block;">
-            <h1 class="test_1" style= "font-size: 50px;">Reveal your inner self.<br> Show  the difference.</h1>
-            <h4 class="test_2" style="margin-top:20px;">We are all unique. Reveal your creativity by means of photography.</h4>
-        </div>
+<!--- 3 Photo Gallery Buttons----->
+<div id= "gal_btn_container" class="container-fluid">
+    <div class="row" style="margin-top: 20px">
+         <div class="col-md-12 col-lg-12" >
+                <div class="centered">
+                    <ul>
+                        <a href="gallery.html"><li  class="outline_ind border gal_buttons">Nature</li></a>
+                        <a href="contact.hmtl" id="creative_btn"><li class="outline_ind border gal_buttons">Creative</li></a>
+                        <a href="about.html"><li class="outline_ind border gal_buttons">Travel</li></a>   
+                    </ul>
+                </div>
+         </div>
     </div>
-</div>
-<!--- Parallax----->
-
-
-<!--- Photo Gallery 2----->
-<div id="gallery_2" class="container-fluid">
-    
-
-	<h1 class="heading">Most Recent</h1>
+    <div class="row" style="margin-top:40px;" >
+        <div class="col-sm-12 col-lg-6 mr-auto ml-auto">
+            <div id="gallery_2">
 
 	<div class="gallery">
 
-		<div class="gallery-item">
+		<div class="gallery-item gal_border" >
 			<img class="gallery-image" src="assets/images/g2_image_1.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
 		</div>
 
-		<div class="gallery-item">
+		<div class="gallery-item gal_border" style="border: 2px solid white; padding: 6px;">
 			<img class="gallery-image" src="assets/images/g2_image_2.jpg" alt="sunset behind San Francisco city skyline">
 		</div>
 
-		<div class="gallery-item">
+		<div class="gallery-item gal_border" style="border: 2px solid white; padding: 6px;">
 			<img class="gallery-image" src="assets/images/g2_image_3.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
 		</div>
 
-		<div class="gallery-item">
+		<div class="gallery-item gal_border" style="border: 2px solid white; padding: 6px;">
 			<img class="gallery-image" src="assets/images/g2_image_4.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
 		</div>
 
-		<div class="gallery-item">
+		<div class="gallery-item gal_border" style="border: 2px solid white; padding: 6px;">
 			<img class="gallery-image" src="assets/images/g2_image_5.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
 		</div>
 
-		<div class="gallery-item">
+		<div class="gallery-item gal_border" style="border: 2px solid white; padding: 6px;">
 			<img class="gallery-image" src="assets/images/g2_image_6.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
 		</div>
 	</div>
-</div>
-<!--- Photo Gallery 2----->
-
-<!--- Main Services----->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6" >
-                 <h1>Main Services</h1>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <h1>LETS GOO</h1>
             </div>
         </div>
     </div>
 
+        
 
-<!--- Main Services----->
+</div>
+
+
+
+
+    <!--- Parallax----->
+<div class="parallax" style="height: 60vh;"> 
+    <div class="container-fluid overlay" >
+        <div class="test_1">
+            <h1 class="test_1">Reveal your inner self.<br> Show  the difference.</h1>
+            <h4 class="test_2">We are all unique. Reveal your creativity by means of photography.</h4>
+        </div>
+    </div>
+</div>
+<!--- Parallax----->
+        
+
 
 
 
@@ -189,8 +143,9 @@
 
 
     
-        <script src="assets/javascript/main.js"></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/javascript/main.js"></script>
          <script
          src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -213,39 +168,3 @@
 </html>
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <script src="assets/javascript/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <script
-         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-         crossorigin="anonymous"
-         ></script>
-      <script
-         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-         crossorigin="anonymous"
-         ></script>
-      <script
-         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-         crossorigin="anonymous"
-         ></script>
-      
-     
-
-   </body>
-</html>
