@@ -21,10 +21,10 @@
         </div>
         <div class="main_list" id="mainListDiv">
             <ul>
-                <li ><a href="index.html">Home</a></li>
-                <li><u><a href="gallery,html">Gallery</a></u></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><u><a href="#gallery">Gallery</a></u></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="gallery.html">Contact</a></li>
             </ul>
             
         </div>
@@ -41,7 +41,7 @@
 
     
  <!--Header technique from Code Institute Whiskey Mini Project-->
-      <div class="container-fluid callout-container">
+      <div class="container-fluid callout-container" >
          <div class="opaque-overlay">&nbsp;</div>
          <div class="row">
             <div class="col-12">
@@ -51,15 +51,27 @@
                   <h1
                      class="jumbotron-header"
                      >
-                     Collect Moments Not Things.
+                     Collect Moments Not Things
                   </h1>
-                  <p>
-                     <a
-                        id="head_btn" class="button_anchor btn btn-lg btn_txt"
-                        href="contact.html"
-                        >Book Now</a
-                        >
-                  </p>
+                  <div id="abc">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Contact Us Form -->
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="assets/images/close_x.png" onclick ="div_hide()">
+<h2>Contact Us</h2>
+<hr>
+<input id="name" name="name" placeholder="Name" type="text">
+<input id="email" name="email" placeholder="Email" type="text">
+<textarea id="msg" name="message" placeholder="Message"></textarea>
+<a href="javascript:%20check_empty()" id="submit" class="outline_ind">Send</a>
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+<!-- Display Popup Button -->
+<button id="popup" onclick="div_show()" class="outline_ind_2 border gal_buttons" name="contact">Contact</button>
+
                </section>
             </div>
          </div>
@@ -75,15 +87,16 @@
                         <li id="water_btn" class="outline_ind border gal_buttons">Water</li>
                         <li id="nature_btn" class="outline_ind border gal_buttons">Nature</li>
                         <li id="creative_btn" class="outline_ind border gal_buttons">Creative</li>
+                        
                     </ul>
                 </div>
          </div>
     </div>
-    <div class="row" style="margin-top:40px;" >
-        <div class="col-sm-12 col-lg-8 mr-auto ml-auto">
+    <div class="row" style="margin-top:40px;" name= "gallery" >
+        <div class="col-sm-12 col-lg-8 mr-auto ml-auto" >
             <div id="gallery_2">
 
-	<div id="gallery" class="gallery">
+	<div id="gallery" class="gallery" style="border: 2px solid white; padding: 25px;">
 
 		<div id="gal_one" class="gallery-item gal_border" >
 			<img class="gallery-image" src="assets/images/g3_img_1.jpg" alt="">
@@ -122,24 +135,84 @@
             </div>
         </div>
     </div>
-
-        
-
 </div>
 
-
-
     <!--- Parallax----->
-<div class="parallax" style="height: 60vh;"> 
+<div class="parallax"> 
     <div class="container-fluid overlay" >
         <div class="test_1">
-            <h1 class="test_1">Reveal your inner self.<br> Show  the difference.</h1>
-            <h4 class="test_2">We are all unique. Reveal your creativity by means of photography.</h4>
+            <h1 class="quote_txt">Reveal your inner self.<br> Show  the difference.</h1>
+            <h4 class="test_3">We are all unique. Reveal your creativity by means of photography.</h4>
         </div>
     </div>
 </div>
 <!--- Parallax----->
 
+
+<!-- Site footer refrenced from codepen.com-->
+      <!-- Site footer -->
+      <footer class="site-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-6 col-md-3">
+                  <h6>Quick Links</h6>
+                  <ul class="footer-links">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="#gallery">Gallery</a></li>
+                     <li><a href="#about">About Us</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                  </ul>
+               </div>
+               <div class="col-xs-6 col-md-3">
+                  <h6>Our Mission</h6>
+                  <p>
+                     Our mission is to provide an enjoyable experience in front of the camera as well as timeless photographs that you will treasure for a lifetime. As a photographer, my goal is to capture stories in the form of images.
+                  </p>
+               </div>
+               <div class="col-sm-12 col-md-6">
+                  <h6><a name="About">About Us</a></h6>
+                  <p class="text-justify">
+                     Photographer & Traveler. Lover of coffee and traveling the world. From the USA, currently living in Denmark. Currently traveling Europe with my wife and son, documenting out travels, and running a successful Travel & Photography Blog with my wife. 
+                  </p>
+               </div>
+            </div>
+            <hr />
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 col-sm-6 col-xs-12">
+                  <p class="copyright-text">
+                     Copyright &copy; Educational Purpose's only.
+                     <a href="#">K&P Photography</a>.
+                  </p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="social-icons">
+                     <li>
+                        <a class="facebook" href="https://www.facebook.com/"
+                           ><i class="fab fa-facebook"></i
+                           ></a>
+                     </li>
+                     <li>
+                        <a class="twitter" href="https://www.twitter.com/"
+                           ><i class="fab fa-twitter-square"></i
+                           ></a>
+                     </li>
+                     <li>
+                        <a class="dribbble" href="https://www.dribble.com/"
+                           ><i class="fas fa-basketball-ball"></i
+                           ></a>
+                     </li>
+                     <li>
+                        <a class="linkedin" href="https://www.linkdin.com/"
+                           ><i class="fab fa-linkedin"></i
+                           ></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
 
 
 
