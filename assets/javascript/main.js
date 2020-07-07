@@ -26,6 +26,17 @@ $(".outline_ind").mouseleave(function(){
        $(this).css('color', 'white');
     });
 
+$(".outline_ind_2").mouseenter(function(){
+        $(this).css('background-color', 'white');
+        $(this).css('color', 'black');
+        $(this).css('font-weight', 'bold');
+        
+    });
+
+$(".outline_ind_2").mouseleave(function(){
+       $(this).css('background-color', 'transparent');
+       $(this).css('color', 'white');
+    });
 
 // Water Photo Gallery Transitions
 $("#water_btn").click(function(){
@@ -67,7 +78,25 @@ $("#creative_btn").click(function(){
     $("#gal_nine").html('<img class="gallery-image" src="assets/images/g1_image_9.jpg" alt"">');
 });
 
-  
+
+// Validating Empty Field
+function check_empty() {
+if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+alert("Fill All Fields !");
+} else {
+document.getElementById('form').submit();
+alert("Form Submitted Successfully...");
+}
+}
+//Function To Display Popup
+function div_show() {
+document.getElementById('abc').style.display = "block";
+}
+//Function to Hide Popup
+function div_hide(){
+document.getElementById('abc').style.display = "none";
+}
+
 
 
 var mainListDiv = document.getElementById("mainListDiv"),
