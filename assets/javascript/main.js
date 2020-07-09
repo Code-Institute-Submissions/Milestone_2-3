@@ -79,6 +79,8 @@ $("#creative_btn").click(function(){
 });
 
 
+
+
 // Validating Empty Field
 function check_empty() {
 if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
@@ -99,6 +101,10 @@ document.getElementById('abc').style.display = "none";
 
 
 
+
+
+
+
 var mainListDiv = document.getElementById("mainListDiv"),
     mediaButton = document.getElementById("mediaButton");
 
@@ -110,3 +116,4 @@ mediaButton.onclick = function () {
     mediaButton.classList.toggle("active");
     
 };
+
