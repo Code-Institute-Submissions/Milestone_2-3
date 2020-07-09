@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
   transition: all 0.4s;
 }
 
@@ -207,6 +206,7 @@ body {
     right: 15px;
     top: 12px;
     display: none;
+    
 }
 
 .nav div.media_button button.main_media_button {
@@ -327,6 +327,7 @@ body {
      
 }
 
+/*****************PopUp Contact Form**************/
 /**PopUp Contact Form**/
 #abc {
 width:100%;
@@ -352,6 +353,7 @@ top:17%;
 margin-left:-202px;
 font-family:'Raleway',sans-serif
 }
+
 form {
 max-width:300px;
 min-width:250px;
@@ -361,6 +363,7 @@ border-radius:10px;
 font-family:raleway;
 background-color:black;
 }
+
 p {
 margin-top:30px
 }
@@ -373,7 +376,6 @@ text-align:center;
 border-radius:10px 10px 0 0
 }
 hr {
-margin:10px -50px;
 border:0;
 border-top:1px solid #ccc
 }
@@ -384,7 +386,6 @@ margin-top:30px;
 border:1px solid #ccc;
 padding-left:40px;
 font-size:16px;
-font-family:raleway
 }
 #name {
 background-image:url(../images/name.jpg);
@@ -438,14 +439,19 @@ cursor:pointer;
 text-align: center;
 padding-left: 15px !important;
 }
-
  
-     
 
 /*****************Gallery Buttons*****************/
+.gal_row_1 {
+    margin-top: 20px;
+}
+
+.gal_row_2 {
+    margin-top: 40px;
+}
+
 #gal_btn_container {
     height:auto; 
-    margin-top: 40px;
     
 }
 
@@ -455,10 +461,8 @@ padding-left: 15px !important;
     border: 2px solid white !important;
     font-size: 20px;
     text-align:center;
-}
-
-.gal_row {
-    margin-top:40px;
+   
+    
 }
 
 
@@ -555,7 +559,11 @@ padding-left: 15px !important;
 *::after {
 	box-sizing: border-box;
 }
-
+.gallery_h1 {
+    font-size: 40px;
+    color: white;
+    border: 2px solid white !important;
+}
 #gallery {
 	max-width: 100rem;
 	margin: 0 auto;
@@ -731,18 +739,7 @@ padding-left: 15px !important;
      margin-right: 0;
      font-weight: 600;
 }
-
  
-
-
-
-/*
-The following rule will only run if your browser supports CSS grid.
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-*/
-
-
-
 /**Media Queries**/
 @media screen and (max-width: 320px) {
   .overlay {

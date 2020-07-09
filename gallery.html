@@ -1,253 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Milestone_2</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-      <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-      <link rel="stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
-      <script src="https://kit.fontawesome.com/51ad751006.js" crossorigin="anonymous"></script>
-   </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Milestone_2</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link
+      rel="stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/51ad751006.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-   <body id="gallery_body">
-   <!----Navbar from Bootstrap---->
+  <body id="gallery_body">
+    <!----Navbar from Bootstrap---->
     <nav class="nav">
-    <div class="container-fluid">
+      <div class="container-fluid">
         <div class="logo">
-            <a href="#"><img src="assets/images/logo_final_black.jpg" alt=""></a>
+          <a href="#"
+            ><img src="assets/images/logo_final_black.jpg" alt=""
+          /></a>
         </div>
         <div class="main_list" id="mainListDiv">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><u><a href="#gallery">Gallery</a></u></li>
-                <li><a href="#About">About Us</a></li>
-                <li><a href="gallery.html">Contact</a></li>
-            </ul>
-            
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <u><a href="#gallery">Gallery</a></u>
+            </li>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="gallery.html">Contact</a></li>
+          </ul>
         </div>
-        </div>
-        <div class="media_button">
-            <button class="main_media_button" id="mediaButton">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-    </div>
-</nav>
-
-
-    
- <!--Header technique from Code Institute Whiskey Mini Project-->
-      <div class="container-fluid callout-container" >
-         <div class="opaque-overlay">&nbsp;</div>
-         <div class="row">
-            <div class="col-12">
-               <section
-                  class="callout jumbotron text-center w3-container w3-center w3-animate-zoom"
-                  >
-                  <h1
-                     class="jumbotron-header"
-                     >
-                     Collect Moments Not Things
-                  </h1>
-                  <div id="abc">
-<!-- Popup Div Starts Here -->
-<div id="popupContact">
-<!-- Contact Us Form -->
-<form action="#" id="form" method="post" name="form">
-<img id="close" src="assets/images/close_x.png" onclick ="div_hide()">
-<h2>Contact Us</h2>
-<hr>
-<input id="name" name="name" placeholder="Name" type="text">
-<input id="email" name="email" placeholder="Email" type="text">
-<textarea id="msg" name="message" placeholder="Message"></textarea>
-<a href="javascript:%20check_empty()" id="submit" class="outline_ind">Send</a>
-</form>
-</div>
-<!-- Popup Div Ends Here -->
-</div>
-<!-- Display Popup Button -->
-<button id="popup" onclick="div_show()" class="outline_ind_2 border gal_buttons" name="contact">Contact</button>
-
-               </section>
-            </div>
-         </div>
       </div>
-      <!--Header technique from Code Institute Whiskey Mini Project-->
+      <div class="media_button">
+        <button class="main_media_button" id="mediaButton">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
 
-<!--- 3 Photo Gallery Buttons----->
-<div id= "gal_btn_container" class="container-fluid">
-    <div class="row">
-         <div class="col-md-12 col-lg-12" >
-                <div class="centered">
-                    <ul>
-                        <li id="water_btn" class="outline_ind border gal_buttons">Water</li>
-                        <li id="nature_btn" class="outline_ind border gal_buttons">Nature</li>
-                        <li id="creative_btn" class="outline_ind border gal_buttons">Creative</li>
-                        
-                    </ul>
-                </div>
-         </div>
-    </div>
-    <div class="row gal_row" name= "gallery" >
-        <div class="col-sm-12 col-lg-8 mr-auto ml-auto" >
-            <div id="gallery_2">
-
-	<div id="gallery" class="gallery">
-
-		<div id="gal_one" class="gallery-item gal_border" >
-			<img class="gallery-image" src="assets/images/g3_img_1.jpg" alt="">
-		</div>
-
-		<div id="gal_two" class="gallery-item gal_border">
-			<img class="gallery-image" src="assets/images/g3_img_2.jpg" alt="sunset behind San Francisco city skyline">
-		</div>
-
-		<div id="gal_three" class="gallery-item gal_border">
-			<img class="gallery-image" src="assets/images/g3_img_3.jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
-		</div>
-
-		<div id="gal_four" class="gallery-item gal_border">
-			<img class="gallery-image" src="assets/images/g3_img_4.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
-		</div>
-
-		<div id="gal_five" class="gallery-item gal_border">
-			<img class="gallery-image" src="assets/images/g3_img_5.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
-		</div>
-
-		<div id="gal_six" class="gallery-item gal_border">
-			<img class="gallery-image" src="assets/images/g3_img_6.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-		</div>
-        <div id="gal_seven" class="gallery-item gal_border">
-			<img class="gallery-image" src="assets/images/g3_img_7.jpg" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
-		</div>
-
-		<div id="gal_eight" class="gallery-item gal_border" >
-			<img class="gallery-image" src="assets/images/g3_img_8.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-		</div>
-        <div id="gal_nine" class="gallery-item gal_border">
-			<img class="gallery-image" src="assets/images/g3_img_9.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
-		</div>
-	</div>
+    <!--Header technique from Code Institute Whiskey Mini Project-->
+    <div class="container-fluid callout-container">
+      <div class="opaque-overlay">&nbsp;</div>
+      <div class="row">
+        <div class="col-12">
+          <section
+            class="callout jumbotron text-center w3-container w3-center w3-animate-zoom"
+          >
+            <h1 class="jumbotron-header">
+              Collect Moments Not Things
+            </h1>
+            <div id="abc">
+              <!-- Popup Div Starts Here -->
+              <div id="popupContact">
+                <!-- Contact Us Form -->
+                <form action="#" id="form" method="post" name="form">
+                  <img
+                    id="close"
+                    src="assets/images/close_x.png"
+                    onclick="div_hide()"
+                  />
+                  <h2>Contact Us</h2>
+                  <hr />
+                  <input id="name" name="name" placeholder="Name" type="text" />
+                  <input
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    type="text"
+                  />
+                  <textarea
+                    id="msg"
+                    name="message"
+                    placeholder="Message"
+                  ></textarea>
+                  <a
+                    href="javascript:%20check_empty()"
+                    id="submit"
+                    class="outline_ind"
+                    >Send</a
+                  >
+                </form>
+              </div>
+              <!-- Popup Div Ends Here -->
             </div>
+            <!-- Display Popup Button -->
+            <button
+              id="popup"
+              onclick="div_show()"
+              class="outline_ind_2 border gal_buttons"
+              name="contact"
+            >
+              Contact
+            </button>
+          </section>
         </div>
+      </div>
     </div>
-</div>
+    <!--Header technique from Code Institute Whiskey Mini Project-->
+
+    <!--- 3 Photo Gallery Buttons----->
+    <div id="gal_btn_container" class="container-fluid">
+      <div class="row gal_row_1">
+        <div class="col-md-12 col-lg-12">
+          <div class="centered">
+            <h1 class=" border gallery_h1">Photo Gallery</h1>
+            <ul>
+              <li id="water_btn" class="outline_ind border gal_buttons">
+                Water
+              </li>
+              <li id="nature_btn" class="outline_ind border gal_buttons">
+                Nature
+              </li>
+              <li id="creative_btn" class="outline_ind border gal_buttons">
+                Creative
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row gal_row_2" name="gallery">
+        <div class="col-sm-12 col-lg-8 mr-auto ml-auto">
+          <div id="gallery_2">
+            <div
+              id="gallery"
+              class="gallery"
+            >
+              <div id="gal_one" class="gallery-item gal_border">
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_1.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div
+                id="gal_two"
+                class="gallery-item gal_border"
+              >
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_2.jpg"
+                  alt="sunset behind San Francisco city skyline"
+                />
+              </div>
+
+              <div
+                id="gal_three"
+                class="gallery-item gal_border"
+              >
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_3.jpg"
+                  alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan"
+                />
+              </div>
+
+              <div
+                id="gal_four"
+                class="gallery-item gal_border"
+              >
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_4.jpg"
+                  alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night"
+                />
+              </div>
+
+              <div
+                id="gal_five"
+                class="gallery-item gal_border"
+              >
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_5.jpg"
+                  alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA"
+                />
+              </div>
+
+              <div
+                id="gal_six"
+                class="gallery-item gal_border"
+              >
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_6.jpg"
+                  alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp"
+                />
+              </div>
+              <div
+                id="gal_seven"
+                class="gallery-item gal_border"
+              >
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_7.jpg"
+                  alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA"
+                />
+              </div>
+
+              <div
+                id="gal_eight"
+                class="gallery-item gal_border"
+              >
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_8.jpg"
+                  alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp"
+                />
+              </div>
+              <div
+                id="gal_nine"
+                class="gallery-item gal_border"
+              >
+                <img
+                  class="gallery-image"
+                  src="assets/images/g3_img_9.jpg"
+                  alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--- Parallax----->
-<div class="parallax"> 
-    <div class="container-fluid overlay" >
+    <div class="parallax">
+      <div class="container-fluid overlay">
         <div class="test_1">
-            <h1 class="quote_txt">Reveal your inner self.<br> Show  the difference.</h1>
-            <h4 class="test_3">We are all unique. Reveal your creativity by means of photography.</h4>
+          <h1 class="quote_txt">
+            Reveal your inner self.<br />
+            Show the difference.
+          </h1>
+          <h4 class="test_3">
+            We are all unique. Reveal your creativity by means of photography.
+          </h4>
         </div>
+      </div>
     </div>
-</div>
-<!--- Parallax----->
+    <!--- Parallax----->
 
+    <!-- Site footer refrenced from codepen.com-->
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Our Mission</h6>
+            <p>
+              Our mission is to provide an enjoyable experience in front of the
+              camera as well as timeless photographs that you will treasure for
+              a lifetime. As a photographer, my goal is to capture stories in
+              the form of images.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h6><a name="About">About Us</a></h6>
+            <p class="text-justify">
+              Photographer & Traveler. Lover of coffee and traveling the world.
+              From the USA, currently living in Denmark. Currently traveling
+              Europe with my wife and son, documenting out travels, and running
+              a successful Travel & Photography Blog with my wife.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; Educational Purpose's only.
+              <a href="#">K&P Photography</a>.
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a class="twitter" href="https://www.twitter.com/"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+              <li>
+                <a class="dribbble" href="https://www.dribble.com/"
+                  ><i class="fas fa-basketball-ball"></i
+                ></a>
+              </li>
+              <li>
+                <a class="linkedin" href="https://www.linkdin.com/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<!-- Site footer refrenced from codepen.com-->
-      <!-- Site footer -->
-      <footer class="site-footer">
-         <div class="container">
-            <div class="row">
-               <div class="col-xs-6 col-md-3">
-                  <h6>Quick Links</h6>
-                  <ul class="footer-links">
-                     <li><a href="index.html">Home</a></li>
-                     <li><a href="#gallery">Gallery</a></li>
-                     <li><a href="#about">About Us</a></li>
-                     <li><a href="#contact">Contact</a></li>
-                  </ul>
-               </div>
-               <div class="col-xs-6 col-md-3">
-                  <h6>Our Mission</h6>
-                  <p>
-                     Our mission is to provide an enjoyable experience in front of the camera as well as timeless photographs that you will treasure for a lifetime. As a photographer, my goal is to capture stories in the form of images.
-                  </p>
-               </div>
-               <div class="col-sm-12 col-md-6">
-                  <h6><a name="About">About Us</a></h6>
-                  <p class="text-justify">
-                     Photographer & Traveler. Lover of coffee and traveling the world. From the USA, currently living in Denmark. Currently traveling Europe with my wife and son, documenting out travels, and running a successful Travel & Photography Blog with my wife. 
-                  </p>
-               </div>
-            </div>
-            <hr />
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-8 col-sm-6 col-xs-12">
-                  <p class="copyright-text">
-                     Copyright &copy; Educational Purpose's only.
-                     <a href="#">K&P Photography</a>.
-                  </p>
-               </div>
-               <div class="col-md-4 col-sm-6 col-xs-12">
-                  <ul class="social-icons">
-                     <li>
-                        <a class="facebook" href="https://www.facebook.com/"
-                           ><i class="fab fa-facebook"></i
-                           ></a>
-                     </li>
-                     <li>
-                        <a class="twitter" href="https://www.twitter.com/"
-                           ><i class="fab fa-twitter-square"></i
-                           ></a>
-                     </li>
-                     <li>
-                        <a class="dribbble" href="https://www.dribble.com/"
-                           ><i class="fas fa-basketball-ball"></i
-                           ></a>
-                     </li>
-                     <li>
-                        <a class="linkedin" href="https://www.linkdin.com/"
-                           ><i class="fab fa-linkedin"></i
-                           ></a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="assets/javascript/main.js"></script>
-         <script
-         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-         crossorigin="anonymous"
-         ></script>
-      <script
-         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-         crossorigin="anonymous"
-         ></script>
-      <script
-         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-         crossorigin="anonymous"
-         ></script>
-      
-     
-
-   </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
