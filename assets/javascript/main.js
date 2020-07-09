@@ -40,6 +40,8 @@ $(".outline_ind_2").mouseleave(function(){
 
 // Water Photo Gallery Transitions
 $("#water_btn").click(function(){
+    $(this).css("background-color", "white");
+    $(this).css('color', 'black');
     $("#gal_one").html('<img class="gallery-image" src="assets/images/g3_img_1.jpg" alt"">');
     $("#gal_two").html('<img class="gallery-image" src="assets/images/g3_img_2.jpg" alt"">');
     $("#gal_three").html('<img class="gallery-image" src="assets/images/g3_img_3.jpg" alt"">');
