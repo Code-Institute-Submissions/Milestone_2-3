@@ -12,8 +12,6 @@ $("#head_btn").mouseleave(function(){
     });
 
 
-
-
 $(".outline_ind").mouseenter(function(){
         $(this).css('background-color', 'white');
         $(this).css('color', 'black');
@@ -40,8 +38,6 @@ $(".outline_ind_2").mouseleave(function(){
 
 // Water Photo Gallery Transitions
 $("#water_btn").click(function(){
-    $(this).css("background-color", "white");
-    $(this).css('color', 'black');
     $("#gal_one").html('<img class="gallery-image" src="assets/images/g3_img_1.jpg" alt"">');
     $("#gal_two").html('<img class="gallery-image" src="assets/images/g3_img_2.jpg" alt"">');
     $("#gal_three").html('<img class="gallery-image" src="assets/images/g3_img_3.jpg" alt"">');
@@ -83,19 +79,41 @@ $("#creative_btn").click(function(){
 
 
 
-// Validating Empty Field
+
+
+// Form Input Validations
 function check_empty() {
-if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
-alert("Fill All Fields !");
+ var letters = /[a-zA-Z]/
+ var emailExpression = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+ if (document.getElementById('name').value.match('letters') == document.getElementById('name').value.match(letters)) {
+   alert('"Name" Requires letters of the alphabet');
+} else if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+    alert("Fill All Fields !");
+} else if (document.getElementById('email').value.match('emailExpression') == document.getElementById('email').value.match(emailExpression)) {
+    alert('Not a valid email')
 } else {
-document.getElementById('form').submit();
-alert("Form Submitted Successfully...");
+    document.getElementById('form').submit();
+    alert("Form Submitted Successfully...");
 }
 }
+
+
+
+
 //Function To Display Popup
 function div_show() {
 document.getElementById('abc').style.display = "block";
 }
+//Function to Hide Popup
+function div_hide(){
+document.getElementById('abc').style.display = "none";
+}
+
+//Function To Display Popup
+function div_show() {
+document.getElementById('abc').style.display = "block";
+}
+
 //Function to Hide Popup
 function div_hide(){
 document.getElementById('abc').style.display = "none";
@@ -106,7 +124,7 @@ document.getElementById('abc').style.display = "none";
 
 
 
-
+//Navbar Collapse
 var mainListDiv = document.getElementById("mainListDiv"),
     mediaButton = document.getElementById("mediaButton");
 

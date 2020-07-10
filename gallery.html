@@ -25,8 +25,8 @@
     ></script>
   </head>
 
+ <!---------------Navbar------------>
   <body id="gallery_body">
-    <!----Navbar from Bootstrap---->
     <nav class="nav">
       <div class="container-fluid">
         <div class="logo">
@@ -53,8 +53,9 @@
         </button>
       </div>
     </nav>
+     <!---------------Navbar------------>
 
-    <!--Header technique from Code Institute Whiskey Mini Project-->
+    <!-----------------Header--------------->
     <div class="container-fluid callout-container">
       <div class="opaque-overlay">&nbsp;</div>
       <div class="row">
@@ -66,10 +67,10 @@
               Collect Moments Not Things
             </h1>
             <div id="abc">
-              <!-- Popup Div Starts Here -->
+              <!-- Popup Div Starts Here (Referenced from Code Pen) -->
               <div id="popupContact">
                 <!-- Contact Us Form -->
-                <form action="#" id="form" method="post" name="form">
+                <form action="#" id="form" method="" name="">
                   <img
                     id="close"
                     alt="close window image"
@@ -78,7 +79,7 @@
                   />
                   <h2>Contact Us</h2>
                   <hr />
-                  <input id="name" name="name" placeholder="Name" type="text" />
+                  <input id="name" name="name" placeholder="Your Name..." type="text" pattern="[a-zA-Z]*" required/>
                   <input
                     id="email"
                     name="email"
@@ -113,7 +114,7 @@
         </div>
       </div>
     </div>
-    <!--Header technique from Code Institute Whiskey Mini Project-->
+    <!-----------------Header--------------->
 
     <!--- 3 Photo Gallery Buttons----->
     <div id="gal_btn_container" class="container-fluid">
@@ -135,6 +136,9 @@
           </div>
         </div>
       </div>
+       <!--- 3 Photo Gallery Buttons-----> 
+
+       <!--- Photo Gallery -------------->
       <div class="row gal_row_2" name="gallery">
         <div class="col-sm-12 col-lg-8 mr-auto ml-auto">
           <div id="gallery_2">
@@ -240,8 +244,9 @@
         </div>
       </div>
     </div>
+    <!--- Photo Gallery -------------->
 
-    <!--- Parallax----->
+    <!--- Parallax-------------------->
     <div class="parallax">
       <div class="container-fluid overlay">
         <div class="test_1">
@@ -255,7 +260,7 @@
         </div>
       </div>
     </div>
-    <!--- Parallax----->
+    <!--- Parallax-------------------->
 
     <!-- Site footer refrenced from codepen.com-->
     <!-- Site footer -->
@@ -327,6 +332,7 @@
         </div>
       </div>
     </footer>
+    <!-- Site footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/javascript/main.js"></script>
