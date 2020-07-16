@@ -117,28 +117,24 @@
     <!-----------------Header--------------->
 
     <!--- 3 Photo Gallery Buttons----->
-    <div id="gal_btn_container" class="container-fluid">
-      <div class="row gal_row_1">
-        <div class="col-md-12 col-lg-12">
-          <div class="centered">
-            <h1 class=" border gallery_h1" >Photo Gallery</h1>
-            <ul>
-              <li id="water_btn" class="outline_ind border gal_buttons">
-                Water
-              </li>
-              <li id="nature_btn" class="outline_ind border gal_buttons">
-                Nature
-              </li>
-              <li id="creative_btn" class="outline_ind border gal_buttons">
-                Creative
-              </li>
-            </ul>
-          </div>
+    <div class="container-fluid">
+        <div class="row btn_row">
+            <div class="col-md-12 col-md-12 col-lg-12 centered">
+                <div class="dropdown">
+                    <button class="dropbtn outline_ind border_2">Photo Gallery</button>
+                    <div class="dropdown-content">
+                        <a id="water_btn" class="outline_ind_3" >Water</a>
+                        <a id="nature_btn" class="outline_ind_3" >Nature</a>
+                        <a id="creative_btn" class="outline_ind_3">Creative</a>
+                    </div>
+                </div>
+                <button class="dropbtn outline_ind border_2">Top Locations</button>
+            </div>
         </div>
-      </div>
-       <!--- 3 Photo Gallery Buttons-----> 
-
-       <!--- Photo Gallery -------------->
+    </div>
+      
+    <div id="gal_btn_container" class="container-fluid">
+        <!--- Photo Gallery -------------->
       <div class="row gal_row_2" name="gallery">
         <div class="col-sm-12 col-lg-8 mr-auto ml-auto">
           <div id="gallery_2">
@@ -246,6 +242,16 @@
     </div>
     <!--- Photo Gallery -------------->
 
+    <!--- Google Map API Fav Photography location information -------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-10">
+                  <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <!--- Google Map API Fav Photography location information -------------->
+
     <!--- Parallax-------------------->
     <div class="parallax">
       <div class="container-fluid overlay">
@@ -333,11 +339,12 @@
       </div>
     </footer>
     <!-- Site footer -->
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDsdf6DibYrpHGUNpUXX6OiInnt1WjZ08I&callback=initMap"></script>
+    <script src="assets/javascript/map.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/javascript/main.js"></script>
-     <script src="assets/javascript/app.js"></script>
-      <script src="assets/javascript/particles.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <script src="assets/javascript/particles.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

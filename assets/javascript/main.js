@@ -19,21 +19,35 @@ $(".outline_ind").mouseenter(function(){
         
     });
 
-$(".outline_ind").mouseleave(function(){
-       $(this).css('background-color', 'black');
-       $(this).css('color', 'white');
-    });
-
 $(".outline_ind_2").mouseenter(function(){
         $(this).css('background-color', 'white');
         $(this).css('color', 'black');
+    });
+
+$(".outline_ind_3").mouseenter(function(){
+        $(this).css('background-color', 'black');
+        $(this).css('color', 'white');
         $(this).css('font-weight', 'bold');
         
     });
 
+$(".outline_ind").mouseleave(function(){
+       $(this).css('background-color', 'black');
+       $(this).css('color', 'white');
+       $(this).css('font-weight', '300');
+    });
+
+    $(".outline_ind_3").mouseleave(function(){
+       $(this).css('background-color', 'white');
+       $(this).css('color', 'black');
+       
+    });
+
+
 $(".outline_ind_2").mouseleave(function(){
        $(this).css('background-color', 'transparent');
        $(this).css('color', 'white');
+        $(this).css('font-weight', 'bold');
     });
 
 // Water Photo Gallery Transitions
