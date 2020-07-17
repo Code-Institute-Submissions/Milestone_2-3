@@ -90,8 +90,23 @@ $("#creative_btn").click(function(){
     $("#gal_nine").html('<img class="gallery-image" src="assets/images/g1_image_9.jpg" alt"">');
 });
 
+//Top Locations Button Toggle
+$("#top_locations").click(function(){
+    $("#google_map").removeClass("hide");
+    $("#gal_btn_container").addClass("hide")
+});
 
+//Photo Gallery Button Toggle
+$("#photo_btn").click(function(){
+    $("#gal_btn_container").removeClass("hide");
+    $("#google_map").addClass("hide")
+});
 
+//Drop Down Button Toggle
+$(".dropdown-content").click(function(){
+    $("#gal_btn_container").removeClass("hide");
+    $("#google_map").addClass("hide")
+});
 
 
 
