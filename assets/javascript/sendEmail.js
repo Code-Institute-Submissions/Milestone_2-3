@@ -1,8 +1,7 @@
-function sendMail(contactForm) {
+function sendMail(form) {
     emailjs.send("gmail", "Milestone_2", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
+        "from_name": form.name.value,
+        "from_email": form.emailaddress.value,
     })
     .then(
         function(response) {
