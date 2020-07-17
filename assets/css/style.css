@@ -125,7 +125,7 @@ canvas {
   
   
   
-}
+
 
 /*****************Index Page social Icons*****************/
 #soccontainer {
@@ -148,6 +148,7 @@ canvas {
   text-decoration: none;
   padding-bottom: 4px;
   color: #fff;
+  padding: 5px;
 }
 
 #soccontainer ul li a:hover {
@@ -575,8 +576,9 @@ button {
 .dropbtn {
   background-color: black;
   color: white;
-  font-size: 35px;
-  margin-left: 20px;
+  font-size: 25px;
+  margin-left: px;
+  margin: 20px
 
   
 }
@@ -874,6 +876,7 @@ button {
   .container {
     margin: 0;
   }
+
 
   .nav div.logo {
     margin-left: 15px;

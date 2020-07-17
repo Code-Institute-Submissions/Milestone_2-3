@@ -47,7 +47,7 @@ $(".outline_ind").mouseleave(function(){
 $(".outline_ind_2").mouseleave(function(){
        $(this).css('background-color', 'transparent');
        $(this).css('color', 'white');
-        $(this).css('font-weight', 'bold');
+       $(this).css('font-weight', 'bold');
     });
 
 // Water Photo Gallery Transitions
