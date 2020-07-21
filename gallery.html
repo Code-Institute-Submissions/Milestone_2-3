@@ -16,25 +16,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link
-      rel="stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"
-    />
     <script
       src="https://kit.fontawesome.com/51ad751006.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-     (function(){
-      emailjs.init("user_vjPJ6BczpfwYMuB9BhqIK");
-    })();
-
-</script>
   </head>
 
- <!---------------Navbar------------>
+ <!--Navbar-->
   <body id="gallery_body">
     <nav class="nav">
       <div class="container-fluid">
@@ -62,9 +50,9 @@
         </button>
       </div>
     </nav>
-<!---------------Navbar------------>
+<!--Navbar-->
 
-<!-----------------Header--------------->
+<!--Header-->
     <div class="container-fluid callout-container">
       <div class="opaque-overlay">&nbsp;</div>
       <div class="row">
@@ -79,7 +67,7 @@
               <!-- Popup Div Starts Here (Referenced from Code Pen) -->
               <div id="popupContact">
                 <!-- Contact Us Form -->
-                <form action="#" id="form"  name="" onsubmit="return sendMail(this);" >
+                <form id="form"  name="form" onsubmit="return sendMail(this);" >
                   <img
                     id="close"
                     alt="close window image"
@@ -123,9 +111,9 @@
         </div>
       </div>
     </div>
-<!-----------------Header--------------->
+<!--Header-->
 
-<!--- 3 Photo Gallery Buttons----->
+<!--3 Photo Gallery Buttons-->
     <div class="container-fluid" >
         <div class="row btn_row">
             <div class="col-md-12 col-md-12 col-lg-12 centered">
@@ -141,9 +129,9 @@
             </div>
         </div>
     </div>
-<!--- 3 Photo Gallery Buttons----->
+<!--3 Photo Gallery Buttons-->
 
-<!--- Google Map API Fav Photography location information -------------->
+<!--Google Map API Fav Photography location information -->
     <div id="google_map" class="container location_map_row hide" >
         <div class="row">
             <div class="col-sm-12 col-lg-10 centered">
@@ -151,11 +139,11 @@
             </div>
         </div>
     </div>
-<!--- Google Map API Fav Photography location information -------------->
+<!--Google Map API Fav Photography location information -->
 
-<!--- Photo Gallery -------------->
+<!--Photo Gallery -->
     <div id="gal_btn_container" class="container-fluid " >
-      <div class="row gal_row_2" name="gallery">
+      <div class="row gal_row_2">
         <div class="col-sm-12 col-lg-8 mr-auto ml-auto">
           <div id="gallery_2">
             <div
@@ -260,9 +248,9 @@
         </div>
       </div>
     </div>
-<!--- Photo Gallery -------------->
+<!--Photo Gallery -->
 
-<!--- Parallax-------------------->
+<!--Parallax-->
     <div class="parallax">
       <div class="container-fluid overlay" style="margin-top: 60px;">
         <div class="test_1">
@@ -276,7 +264,7 @@
         </div>
       </div>
     </div>
-<!--- Parallax-------------------->
+<!--Parallax-->
 
 <!-- Site footer refrenced from codepen.com-->
 <!-- Site footer -->
@@ -288,7 +276,6 @@
             <ul class="footer-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#about">About Us</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -302,7 +289,7 @@
             </p>
           </div>
           <div class="col-sm-12 col-md-6">
-            <h6><a name="About">About Us</a></h6>
+            <h6>About Us</h6>
             <p class="text-justify">
               Photographer & Traveler. Lover of coffee and traveling the world.
               From the USA, currently living in Denmark. Currently traveling
@@ -351,7 +338,6 @@
 <!-- Site footer -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=localContext&v=beta&key=AIzaSyDsdf6DibYrpHGUNpUXX6OiInnt1WjZ08I&callback=initMap"></script>
     <script src="assets/javascript/map.js"></script>
-    <script src="assets/javascript/sendEmail.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/javascript/main.js"></script>
     <script src="assets/javascript/app.js"></script>
