@@ -29,8 +29,15 @@ As a user, I want a direct line of communication so that I can get quotes for ph
 As a user with my only access to the internet being a phone, I want access to K&P Photographys website via mobile, so that I can access their information. End-user goal: Responsive Website End business goal: Increase customer acceptance as well as sales. 
 
 ### Wireframes
-I have provided an active link to my Wireframes https://balsamiq.cloud/skdo9v9/plj57xm
+I have provided an active link to my Wireframes.
 Wireframes were used to assist in the creation of my site. They played a key role throughout its development. The Wireframes helped make the responsive design as well as the nav-bar that was used throughout the site on each of the pages. 
+
+1. Wireframes:
+   1. Index/Home Page https://wireframe.cc/CGX5ra
+   1. Gallery Page https://wireframe.cc/TsrS12
+   
+
+  
 
 ## Features
  
