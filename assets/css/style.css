@@ -169,10 +169,6 @@ canvas {
   margin-top: 40px;
   font-size: 21px;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   text-align: center;
 }
 
@@ -194,7 +190,7 @@ canvas {
 /**********  Gallery Navbar section referenced from Code Pen ***********/
 .nav li a {
   font-size: 17px;
-  font-weight: 200px;
+  font-weight: 200;
   color: white;
   text-align: center !important;
 }
@@ -577,10 +573,7 @@ button {
   background-color: black;
   color: white;
   font-size: 25px;
-  margin-left: px;
   margin: 20px
-
-  
 }
 
 .dropdown {
@@ -950,25 +943,7 @@ button {
   }
 }
 
-/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
 
-@supports (display: grid) {
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: 2rem;
-  }
-
-  .gallery,
-  .gallery-item {
-    margin: 0;
-  }
-}
 
 
 
