@@ -117,6 +117,7 @@ Wireframes were used to assist in the creation of my site. They played a key rol
 1. Code Validation Tools used:
    1. https://validator.w3.org/
    1. https://jigsaw.w3.org/css-validator/
+   1. https://esprima.org/demo/validate used to test/validate Javascript.
    1. **Code passed all of the validation criteria**
     
  
