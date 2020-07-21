@@ -1,3 +1,4 @@
+// Code Referenced from Google Map API Documentaion 
 let map;
     let infoWindow;
     let infoStorage;

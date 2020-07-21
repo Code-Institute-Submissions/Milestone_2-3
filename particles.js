@@ -1,4 +1,4 @@
-//Particles JS Library, refrenced from Github.com
+//Particles JS Library, refrenced from Github.co
 
 var pJS = function(tag_id, params){
 

@@ -110,6 +110,7 @@ $(".dropdown-content").click(function(){
 
 
 
+
 // Form Input Validations
 function check_empty() {
  var letters = /[a-zA-Z]/
